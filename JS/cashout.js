@@ -45,18 +45,27 @@ document.getElementById('cashout-btn').addEventListener('click', function()
         const newHistory = document.createElement("div");
 
         //3
-        newHistory.innerHTML=`
-            <div class="transaction-card p-5 bg-base-100 mb-5 rounded-md">
-            Cash Out success - ${cashoutAmount}$ 
+        newHistory.innerHTML=
+         `
+        
+             <div class="transaction-card p-5 bg-base-100 mb-5 rounded-md ">
 
-            from Agent NO:  ${cashoutNumber}
-            at
-            ${new Date()}
+                    <div class="flex gap-3">
+                        <img src="./assets/opt-2.png" alt="">
+                        <p class="font-bold">Cash Out Successful!</p>    
+                    </div>
+                    <br>
+
+                    Agent Ac-No: ${cashoutNumber} Amount --> ${cashoutAmount}
+                  
+            at ${new Date()}
+              New Balance :: ${newBalance}
             </div>
+          
         `
 
         //4
-        history.append(newHistory);
+        history.prepend(newHistory);
     }
     else
     {

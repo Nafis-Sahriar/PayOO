@@ -61,18 +61,28 @@ document.getElementById('add-money-btn').addEventListener('click', function(){
         const newHistory = document.createElement("div");
 
         //3
-        newHistory.innerHTML=`
-            <div class="transaction-card p-5 bg-base-200 mb-5 rounded-md">
-            Add Money success - ${amount}$ 
+        newHistory.innerHTML=
+        `
+        
+             <div class="transaction-card p-5 bg-base-100 mb-5 rounded-md ">
 
-            from ${bankAccount} , AC No. ${acno}
-            at
-            ${new Date()}
+                    <div class="flex gap-3">
+                        <img src="./assets/opt-1.png" alt="">
+                        <p class="font-bold">Add Money Successful!</p>    
+                    </div>
+                    <br>
+
+                    Bank -${bankAccount} 
+                    Ac No-${acno} Amount --> ${amount} 
+                  
+            at ${new Date()}
+              New Balance :: ${newBalance}
             </div>
+          
         `
 
         //4
-        history.append(newHistory);
+        history.prepend(newHistory);
 
 
 

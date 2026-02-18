@@ -187,9 +187,31 @@
 
 
     <!-- Transfer Money Section -->
-    <section id="transfer-money" class="w-11/12 mx-auto space-y-5 hidden">
+    <section id="transfer-money" class="w-11/12 mx-auto space-y-5 ">
 
           <h2 class="text-2xl font-bold mb-5 mt-15 text-violet-900">Transfer Money</h2>
+
+          <div class="card bg-base-100 w-full  mx-auto rounded-2xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label text-neutral font-bold">User Account Number</label>
+                        <input id="transfer-number" maxlength="11" minlength="11" type="number"
+                            class="input rounded-full w-full bg-base-200" placeholder="Enter Reciever's Number" />
+                        <br>
+                        <label class="label text-black font-bold">Amount</label>
+                        <input id="transfer-amount" maxlength="5" minlength="5" type="number"
+                            class="input rounded-full w-full bg-base-200" placeholder="Enter amount to Transfer" />
+                        <br>
+                        <label class="label text-black font-bold">Pin Code</label>
+                        <input id="transfer-pin" maxlength="4" minlength="4" type="password"
+                            class="input rounded-full w-full bg-base-200" placeholder="Enter your 4-Digit-Pin" />
+
+                        <button id="transfer-btn" class="btn btn-primary rounded-full mt-4 w-full">Send Now</button>
+                    </fieldset>
+                </div>
+            </div>
+
+
 
 
 
@@ -206,7 +228,7 @@
         <h2 class="font-bold text-2xl mb-5 mt-10">Transaction History</h2>
         <div id="history-container">
 
-            
+    
         </div>
 
 
