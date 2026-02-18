@@ -47,6 +47,37 @@ document.getElementById('add-money-btn').addEventListener('click', function(){
         at ${new Date()}`);
         setBalance(newBalance);
 
+        //_______________________Transaction History________________________||
+
+        //1 -- History Container niye ashbo
+        //2 -- New Div create korte hobe 
+        //3 -- New Div er vitor Inner HTML likhte hobe 
+        //4 -- New div ta history container e append korbo
+
+        //1
+        const history = document.getElementById('history-container');
+
+        //2
+        const newHistory = document.createElement("div");
+
+        //3
+        newHistory.innerHTML=`
+            <div class="transaction-card p-5 bg-base-200 mb-5 rounded-md">
+            Add Money success - ${amount}$ 
+
+            from ${bankAccount} , AC No. ${acno}
+            at
+            ${new Date()}
+            </div>
+        `
+
+        //4
+        history.append(newHistory);
+
+
+
+
+
     }
     else
     {

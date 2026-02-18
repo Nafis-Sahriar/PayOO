@@ -36,6 +36,27 @@ document.getElementById('cashout-btn').addEventListener('click', function()
         alert("Cashout Successful");
         // document.getElementById('balance').innerText=newBalance;
         setBalance(newBalance);
+
+        
+        
+        const history = document.getElementById('history-container');
+
+        //2
+        const newHistory = document.createElement("div");
+
+        //3
+        newHistory.innerHTML=`
+            <div class="transaction-card p-5 bg-base-100 mb-5 rounded-md">
+            Cash Out success - ${cashoutAmount}$ 
+
+            from Agent NO:  ${cashoutNumber}
+            at
+            ${new Date()}
+            </div>
+        `
+
+        //4
+        history.append(newHistory);
     }
     else
     {

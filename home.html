@@ -97,9 +97,9 @@
                 <img src="./assets/opt-5.png" alt="">
                 <p>Add Money</p>
             </button>
-            <button class="btn flex-col h-full py-4 btn-soft rounded-md text-[#080808b1] hover:bg-violet-300">
+            <button onclick="showOnly('history')" class="btn flex-col h-full py-4 btn-soft rounded-md text-[#080808b1] hover:bg-violet-300">
                 <img src="./assets/opt-6.png" alt="">
-                <p>Add Money</p>
+                <p>Transactions</p>
             </button>
 
         </div>
@@ -187,10 +187,22 @@
 
 
 
+    <!-- Most Important Section -- Transaction History DiV Add -->
+    <section id="history" class="w-10/12 mx-auto py-5 hidden">
+
+        <h2 class="font-bold text-2xl mb-5 mt-10">Transaction History</h2>
+        <div id="history-container">
+
+            
+        </div>
+
+
+    </section>
+
+
+
     <!-- Bar bar kichu code likha komanor jonno -->
     <script src="./JS/machiene.js"></script>
-
-
     <script src="./JS/cashout.js"></script>
     <script src="./JS/addmoney.js"></script>
 

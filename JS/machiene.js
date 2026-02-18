@@ -37,12 +37,14 @@ function showOnly(id)
     console.log("Show Only working");
     const addmoney = document.getElementById('add-money');
     const cashout = document.getElementById('cash-out');
+    const transaction = document.getElementById('history');
 
     // console.log(`Add Money = ${addmoney}, CashOut = ${cashout}`);
 
     // hide all
     addmoney.classList.add("hidden");
     cashout.classList.add("hidden");
+    transaction.classList.add("hidden");
 
     // show only one which was id
 
