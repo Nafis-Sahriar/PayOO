@@ -9,3 +9,17 @@ function getValueFromInput(id){
     return value;
 
 }
+
+
+function getBalance()
+{
+    const balanceElement = document.getElementById('balance');
+
+    const balance = balanceElement.innerText;
+
+    console.log("Current Balance : ", balance);
+
+    return Number(balance);
+}
+
+// function setBalance()
