@@ -84,9 +84,25 @@ document.getElementById('add-money-btn').addEventListener('click', function(){
         //4
         history.prepend(newHistory);
 
+                const recentContainer = document.getElementById('recent_container');
 
+        const newRecent = document.createElement('div');
 
+        newRecent.innerHTML=
+        `
+              <div class="w-full bg-purple-100 p-5 mt-5 rounded-xl flex gap-3">
 
+                    <div class="w-[60px]"><img src="./assets/opt-1.png" alt=""> </div>      
+                    <div>
+                      <p class="font-bold">Add Money</p>
+                      From Bank A/C - ${acno}|
+                      Amount -${amount}
+                        
+                    </div>
+                 </div>
+        `
+
+        recentContainer.prepend(newRecent);
 
     }
     else

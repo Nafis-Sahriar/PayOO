@@ -81,6 +81,25 @@ document.getElementById('transfer-btn').addEventListener('click', function()
 
         history.prepend(newHistory);
 
+        const recentContainer = document.getElementById('recent_container');
+
+        const newRecent = document.createElement('div');
+
+        newRecent.innerHTML=
+        `
+              <div class="w-full bg-purple-100 p-5 mt-5 rounded-xl flex gap-3">
+
+                    <div class="w-[60px]"><img src="./assets/opt-3.png" alt=""> </div>      
+                    <div>
+                      <p class="font-bold">Money Transfered</p>
+                      To Payoo-A/C - ${accountNumber}
+                       | Amount -${transferAmount}
+                    </div>
+                 </div>
+        `
+
+        recentContainer.prepend(newRecent);
+
         
 
 

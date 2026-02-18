@@ -66,6 +66,30 @@ document.getElementById('cashout-btn').addEventListener('click', function()
 
         //4
         history.prepend(newHistory);
+
+        const recentContainer = document.getElementById('recent_container');
+
+        const newRecent = document.createElement('div');
+
+        newRecent.innerHTML=
+        `
+              <div class="w-full bg-purple-100 p-5 mt-5 rounded-xl flex gap-3">
+
+                    <div class="w-[60px]"><img src="./assets/opt-2.png" alt=""> </div>      
+                    <div>
+                      <p class="font-bold">Cash Out</p>
+                      From Agent A/C - ${cashoutNumber}
+                       | Amount -${cashoutAmount}
+                    </div>
+                 </div>
+        `
+
+        recentContainer.prepend(newRecent);
+
+
+
+
+
     }
     else
     {
