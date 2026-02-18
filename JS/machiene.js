@@ -22,4 +22,10 @@ function getBalance()
     return Number(balance);
 }
 
-// function setBalance()
+function setBalance( amount)
+{
+    const currentBalance  = document.getElementById('balance');
+
+    currentBalance.innerText = amount;
+
+}
