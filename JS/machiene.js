@@ -40,6 +40,7 @@ function showOnly(id)
     const transaction = document.getElementById('history');
     const transferMoney = document.getElementById('transfer-money');
     const bonus_sec = document.getElementById('get-bonus');
+    const payoo = document.getElementById('pay');
 
     // console.log(`Add Money = ${addmoney}, CashOut = ${cashout}`);
 
@@ -49,6 +50,7 @@ function showOnly(id)
     transaction.classList.add("hidden");
     transferMoney.classList.add("hidden");
     bonus_sec.classList.add('hidden');
+    payoo.classList.add('hidden');
 
     // show only one which was id
 
