@@ -29,3 +29,26 @@ function setBalance( amount)
     currentBalance.innerText = amount;
 
 }
+
+
+
+function showOnly(id)
+{
+    console.log("Show Only working");
+    const addmoney = document.getElementById('add-money');
+    const cashout = document.getElementById('cash-out');
+
+    // console.log(`Add Money = ${addmoney}, CashOut = ${cashout}`);
+
+    // hide all
+    addmoney.classList.add("hidden");
+    cashout.classList.add("hidden");
+
+    // show only one which was id
+
+    const selected = document.getElementById(id);
+    selected.classList.remove('hidden');
+
+
+
+}
